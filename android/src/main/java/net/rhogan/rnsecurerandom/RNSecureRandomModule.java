@@ -30,4 +30,9 @@ public class RNSecureRandomModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNSecureRandom";
   }
+
+  @Override    
+  public boolean canOverrideExistingModule() {        
+    return true;    
+  }
 }
